@@ -9,6 +9,7 @@ import { ProtectedRoute1Component } from './components/protected-route1/protecte
 import { ProtectedRoute2Component } from './components/protected-route2/protected-route2.component';
 import { NavigationComponent } from './components/navigation/navigation.component';
 import { HttpClientModule } from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -21,6 +22,7 @@ import { HttpClientModule } from '@angular/common/http';
   imports: [
     BrowserModule,
     AppRoutingModule,
+    FormsModule,
     HttpClientModule,
     BrowserAnimationsModule
   ],
