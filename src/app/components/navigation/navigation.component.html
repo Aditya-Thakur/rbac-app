@@ -1,0 +1,12 @@
+<nav>
+    <a routerLink="/users">Users</a>
+    <a routerLink="/protected-route1" *ngIf="canViewRoute('protected-route1')">ProtectedRoute1</a>
+    <a routerLink="/protected-route2" *ngIf="canViewRoute('protected-route2')">ProtectedRoute2</a>
+</nav>
+
+<div>
+    <span>Current User: {{ currentUser?.name || 'None' }}</span>
+    <button *ngFor="let user of users" (click)="assumeRole(user)">
+        Assume {{ user.name }}
+    </button>
+</div>

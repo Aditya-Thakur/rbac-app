@@ -1,0 +1,4 @@
+<div *ngFor="let user of users">
+    <span>{{ user.name }} - {{ user.role }}</span>
+    <button mat-button color="primary" *ngIf="canEditUser()">Edit</button>
+</div>
